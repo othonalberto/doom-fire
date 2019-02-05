@@ -28,14 +28,24 @@
             }
 
             td.pixel {
-                width: 4px;
-                height: 4px;
+                width: 5px;
+                height: 5px;
                 border: 0;
             }
         </style>
     </head>
     <body>
         <div id="fire-div"></div>
+        <div id="options">
+            <button onclick="changeWindDirection(0)"> <- </button>
+            <button onclick="changeWindDirection(1)"> No wind at all</button>
+            <button onclick="changeWindDirection(2)"> -> </button>
+
+        </div>
+        <div id="caos">
+            <button onclick="caosMode()">Caos Mode</button>
+        </div>
+        
         <script src="fire.js"></script>
     </body>
 </html>
